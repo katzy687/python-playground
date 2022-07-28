@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataModelInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.qualisystems.com/ResourceManagement/DataModelSchema.xsd">
+  <Attributes>
+    <AttributeInfo Name="Model Name" Type="String" DefaultValue="" Description="Model Name" IsReadOnly="false">
+      <Rules>
+        <Rule Name="Configuration" />
+        <Rule Name="Setting" />
+        <Rule Name="Displayed In Diagram" />
+      </Rules>
+    </AttributeInfo>
+    <AttributeInfo xsi:type="LookupAttributeDetails" Name="App Deploy Order" Type="Lookup" DefaultValue="N/A" Description="Determine order of power on and refresh ip for apps during custom setup" IsReadOnly="false">
+      <Rules>
+        <Rule Name="Configuration" />
+        <Rule Name="Setting" />
+        <Rule Name="Displayed In Diagram" />
+      </Rules>
+      <LookupValues>
+        <LookupValue NumericValue="0" StringValue="N/A" />
+        <LookupValue NumericValue="1" StringValue="1" />
+        <LookupValue NumericValue="2" StringValue="2" />
+        <LookupValue NumericValue="3" StringValue="3" />
+        <LookupValue NumericValue="4" StringValue="4" />
+        <LookupValue NumericValue="5" StringValue="5" />
+        <LookupValue NumericValue="6" StringValue="6" />
+        <LookupValue NumericValue="7" StringValue="7" />
+      </LookupValues>
+    </AttributeInfo>
+    <AttributeInfo Name="Post Deploy Timeout" Type="Numeric" DefaultValue="0" Description="During Custom deploy order setup, determine timout period after powering on resource before powering on other apps" IsReadOnly="false">
+      <Rules>
+        <Rule Name="Configuration" />
+        <Rule Name="Setting" />
+        <Rule Name="Displayed In Diagram" />
+      </Rules>
+    </AttributeInfo>
+    <AttributeInfo Name="Remote Connector Hostname" Type="String" DefaultValue="" Description="Hostname for the Web Remote Connection Server" IsReadOnly="false">
+      <Rules>
+        <Rule Name="Configuration" />
+        <Rule Name="Setting" />
+        <Rule Name="Displayed In Diagram" />
+      </Rules>
+    </AttributeInfo>
+    <AttributeInfo Name="Execution Server Selector" Type="String" DefaultValue="" Description="This attribute points to a pre-defined group of execution servers. Usually used for different sites or domains." IsReadOnly="false">
+      <Rules>
+        <Rule Name="Configuration" />
+        <Rule Name="Setting" />
+        <Rule Name="Displayed In Diagram" />
+        <Rule Name="Execution Server Selector" />
+      </Rules>
+    </AttributeInfo>
+    <AttributeInfo Name="MGMT Ansible Log" Type="String" DefaultValue="" Description="log file name of management playbook" IsReadOnly="false">
+      <Rules>
+        <Rule Name="Configuration" />
+        <Rule Name="Setting" />
+        <Rule Name="Displayed In Diagram" />
+      </Rules>
+    </AttributeInfo>
+    <AttributeInfo Name="QualiX_Address" Type="String" DefaultValue="" IsReadOnly="false">
+      <Rules>
+        <Rule Name="Configuration" />
+        <Rule Name="Setting" />
+        <Rule Name="Displayed In Diagram" />
+      </Rules>
+    </AttributeInfo>
+    <AttributeInfo Name="User Ansible Log" Type="String" DefaultValue="" Description="Log file name of user playbook" IsReadOnly="false">
+      <Rules>
+        <Rule Name="Configuration" />
+        <Rule Name="Setting" />
+        <Rule Name="Displayed In Diagram" />
+      </Rules>
+    </AttributeInfo>
+    <AttributeInfo Name="Update Mail" Type="Boolean" DefaultValue="False" Description="To tag for orchestration" IsReadOnly="false">
+      <Rules>
+        <Rule Name="Configuration" />
+        <Rule Name="Setting" />
+        <Rule Name="Displayed In Diagram" />
+      </Rules>
+    </AttributeInfo>
+    <AttributeInfo Name="Config Delay" Type="Numeric" DefaultValue="0" Description="(Seconds) Delay before starting config management. App with highest value will determine delay." IsReadOnly="false">
+      <Rules>
+        <Rule Name="Configuration" />
+        <Rule Name="Setting" />
+        <Rule Name="Displayed In Diagram" />
+      </Rules>
+    </AttributeInfo>
+    <AttributeInfo Name="QnQ" Type="Boolean" DefaultValue="False" IsReadOnly="false">
+      <Rules>
+        <Rule Name="Configuration" />
+        <Rule Name="Setting" />
+      </Rules>
+    </AttributeInfo>
+    <AttributeInfo Name="CTag" Type="String" DefaultValue="" Description="Enter an ID or range to configure VLAN as Selective Q-in-Q. Examples - '100-200','10,20,40-100'" IsReadOnly="false">
+      <Rules>
+        <Rule Name="Configuration" />
+        <Rule Name="Setting" />
+      </Rules>
+    </AttributeInfo>
+    <AttributeInfo Name="Password" Type="Password" DefaultValue="" Description="" IsReadOnly="false">
+      <Rules>
+        <Rule Name="Configuration" />
+        <Rule Name="Setting" />
+      </Rules>
+    </AttributeInfo>
+    <AttributeInfo Name="User" Type="String" DefaultValue="" Description="" IsReadOnly="false">
+      <Rules>
+        <Rule Name="Configuration" />
+        <Rule Name="Setting" />
+      </Rules>
+    </AttributeInfo>
+    <AttributeInfo Name="Public IP" Type="String" DefaultValue="" Description="Static Public IP Type ensures that the VM always uses the same public IP. By default, Public IPs are dynamic and the address associated to them may change when the VM is deleted from Azure" IsReadOnly="false">
+      <Rules>
+        <Rule Name="Configuration" />
+        <Rule Name="Setting" />
+      </Rules>
+    </AttributeInfo>
+    <AttributeInfo Name="natti test" Type="String" DefaultValue="" Description="Model Name" IsReadOnly="false">
+      <Rules />
+    </AttributeInfo>
+    <AttributeInfo Name="is_ssh" Type="String" DefaultValue="" IsReadOnly="true">
+      <Rules />
+    </AttributeInfo>
+    <AttributeInfo Name="is_rdp" Type="String" DefaultValue="" Description="for selective tagging of rdp link" IsReadOnly="true">
+      <Rules />
+    </AttributeInfo>
+    <AttributeInfo Name="Subnet Size" Type="Numeric" DefaultValue="16" Description="Number of IP addresses in the subnet. Please note that several IP addresses are being used by the cloud provider, in order to provide network related services, so available range is somewhat smaller." IsReadOnly="false">
+      <Rules>
+        <Rule Name="Configuration" />
+        <Rule Name="Setting" />
+      </Rules>
+    </AttributeInfo>
+    <AttributeInfo Name="Public" Type="Boolean" DefaultValue="False" Description="Connect the subnet to the internet gateway." IsReadOnly="false">
+      <Rules>
+        <Rule Name="Configuration" />
+        <Rule Name="Setting" />
+      </Rules>
+    </AttributeInfo>
+    <AttributeInfo Name="Allocated CIDR" Type="String" DefaultValue="" Description="CIDR that was allocated for this subnet." IsReadOnly="false">
+      <Rules>
+        <Rule Name="Configuration" />
+        <Rule Name="Setting" />
+      </Rules>
+    </AttributeInfo>
+    <AttributeInfo Name="Subnet Id" Type="String" DefaultValue="" IsReadOnly="true">
+      <Rules>
+        <Rule Name="Configuration" />
+        <Rule Name="Setting" />
+      </Rules>
+    </AttributeInfo>
+  </Attributes>
+  <ResourceFamilies>
+    <ResourceFamily Name="Generic App Family" IsLockedByDefault="true" Description="" IsSearchable="true" ResourceType="Application" AllowRemoteConnection="true">
+      <AttachedAttributes>
+        <AttachedAttribute Name="Model Name" IsOverridable="true" IsLocal="true">
+          <AllowedValues />
+        </AttachedAttribute>
+        <AttachedAttribute Name="App Deploy Order" IsOverridable="true" IsLocal="true">
+          <AllowedValues />
+        </AttachedAttribute>
+        <AttachedAttribute Name="Post Deploy Timeout" IsOverridable="true" IsLocal="true">
+          <AllowedValues />
+        </AttachedAttribute>
+        <AttachedAttribute Name="Remote Connector Hostname" IsOverridable="true" IsLocal="true">
+          <AllowedValues />
+        </AttachedAttribute>
+        <AttachedAttribute Name="Execution Server Selector" IsOverridable="true" IsLocal="true">
+          <AllowedValues />
+        </AttachedAttribute>
+        <AttachedAttribute Name="MGMT Ansible Log" IsOverridable="true" IsLocal="true">
+          <AllowedValues />
+        </AttachedAttribute>
+        <AttachedAttribute Name="QualiX_Address" IsOverridable="true" IsLocal="true">
+          <AllowedValues />
+        </AttachedAttribute>
+        <AttachedAttribute Name="User Ansible Log" IsOverridable="true" IsLocal="true">
+          <AllowedValues />
+        </AttachedAttribute>
+        <AttachedAttribute Name="Update Mail" IsOverridable="true" IsLocal="true">
+          <AllowedValues />
+        </AttachedAttribute>
+        <AttachedAttribute Name="Config Delay" IsOverridable="true" IsLocal="true">
+          <AllowedValues />
+        </AttachedAttribute>
+      </AttachedAttributes>
+      <AttributeValues>
+        <AttributeValue Name="Model Name" Value="" />
+        <AttributeValue Name="App Deploy Order" Value="N/A" />
+        <AttributeValue Name="Post Deploy Timeout" Value="0" />
+        <AttributeValue Name="Remote Connector Hostname" Value="remote.tgbr.local" />
+        <AttributeValue Name="Execution Server Selector" Value="" />
+        <AttributeValue Name="MGMT Ansible Log" Value="" />
+        <AttributeValue Name="QualiX_Address" Value="" />
+        <AttributeValue Name="User Ansible Log" Value="" />
+        <AttributeValue Name="Update Mail" Value="False" />
+        <AttributeValue Name="Config Delay" Value="0" />
+      </AttributeValues>
+      <Models>
+        <ResourceModel Name="Generic App Model" Description="" SupportsConcurrentCommands="false">
+          <AttachedAttributes>
+            <AttachedAttribute Name="Password" IsOverridable="true" IsLocal="true">
+              <AllowedValues />
+            </AttachedAttribute>
+            <AttachedAttribute Name="User" IsOverridable="true" IsLocal="true">
+              <AllowedValues />
+            </AttachedAttribute>
+            <AttachedAttribute Name="Public IP" IsOverridable="true" IsLocal="true">
+              <AllowedValues />
+            </AttachedAttribute>
+            <AttachedAttribute Name="natti test" IsOverridable="true" IsLocal="true">
+              <AllowedValues />
+            </AttachedAttribute>
+            <AttachedAttribute Name="is_ssh" IsOverridable="true" IsLocal="true">
+              <AllowedValues />
+            </AttachedAttribute>
+            <AttachedAttribute Name="is_rdp" IsOverridable="true" IsLocal="true">
+              <AllowedValues />
+            </AttachedAttribute>
+          </AttachedAttributes>
+          <AttributeValues>
+            <AttributeValue Name="Password" Value="" />
+            <AttributeValue Name="User" Value="" />
+            <AttributeValue Name="Public IP" Value="" />
+            <AttributeValue Name="natti test" Value="" />
+            <AttributeValue Name="is_ssh" Value="" />
+            <AttributeValue Name="is_rdp" Value="" />
+            <AttributeValue Name="Model Name" Value="" />
+            <AttributeValue Name="App Deploy Order" Value="N/A" />
+            <AttributeValue Name="Post Deploy Timeout" Value="0" />
+            <AttributeValue Name="Remote Connector Hostname" Value="remote.tgbr.local" />
+            <AttributeValue Name="Execution Server Selector" Value="" />
+            <AttributeValue Name="MGMT Ansible Log" Value="" />
+            <AttributeValue Name="QualiX_Address" Value="" />
+            <AttributeValue Name="User Ansible Log" Value="" />
+            <AttributeValue Name="Update Mail" Value="False" />
+            <AttributeValue Name="Config Delay" Value="0" />
+          </AttributeValues>
+          <ParentModels />
+          <Drivers />
+          <Scripts />
+        </ResourceModel>
+      </Models>
+      <Categories />
+    </ResourceFamily>
+    <ResourceFamily Name="Virtual Network" ImagePath="Virtual Network_Family.png" Description="" IsService="true" ServiceType="Regular" AllowRemoteConnection="false">
+      <AttachedAttributes>
+        <AttachedAttribute Name="QnQ" IsOverridable="true" IsLocal="true">
+          <AllowedValues />
+        </AttachedAttribute>
+        <AttachedAttribute Name="CTag" IsOverridable="true" IsLocal="true">
+          <AllowedValues />
+        </AttachedAttribute>
+        <AttachedAttribute Name="QualiX_Address" IsOverridable="true" IsLocal="true" UserInput="true">
+          <AllowedValues />
+        </AttachedAttribute>
+      </AttachedAttributes>
+      <AttributeValues>
+        <AttributeValue Name="QnQ" Value="False" />
+        <AttributeValue Name="CTag" Value="" />
+        <AttributeValue Name="QualiX_Address" Value="" />
+      </AttributeValues>
+      <Models>
+        <ResourceModel Name="Subnet" Description="" SupportsConcurrentCommands="false">
+          <AttachedAttributes>
+            <AttachedAttribute Name="Subnet Size" IsOverridable="true" IsLocal="true" UserInput="true">
+              <AllowedValues>
+                <AllowedValue>16</AllowedValue>
+                <AllowedValue>32</AllowedValue>
+                <AllowedValue>64</AllowedValue>
+                <AllowedValue>128</AllowedValue>
+              </AllowedValues>
+            </AttachedAttribute>
+            <AttachedAttribute Name="Public" IsOverridable="true" IsLocal="true" UserInput="true">
+              <AllowedValues />
+            </AttachedAttribute>
+            <AttachedAttribute Name="Allocated CIDR" IsOverridable="true" IsLocal="true" UserInput="true">
+              <AllowedValues />
+            </AttachedAttribute>
+            <AttachedAttribute Name="Subnet Id" IsOverridable="true" IsLocal="true">
+              <AllowedValues />
+            </AttachedAttribute>
+          </AttachedAttributes>
+          <AttributeValues>
+            <AttributeValue Name="Subnet Size" Value="16" />
+            <AttributeValue Name="Public" Value="True" />
+            <AttributeValue Name="Allocated CIDR" Value="" />
+            <AttributeValue Name="Subnet Id" Value="" />
+            <AttributeValue Name="QnQ" Value="False" />
+            <AttributeValue Name="CTag" Value="" />
+            <AttributeValue Name="QualiX_Address" Value="" />
+          </AttributeValues>
+          <ParentModels />
+          <Drivers />
+          <Scripts />
+        </ResourceModel>
+      </Models>
+      <Categories>
+        <Category>Networking</Category>
+      </Categories>
+    </ResourceFamily>
+    <ResourceFamily Name="Apps Orchestration" Description="" IsService="true" ServiceType="Orchestration" AllowRemoteConnection="false">
+      <AttachedAttributes />
+      <AttributeValues />
+      <Models>
+        <ResourceModel Name="Simple" Description="" SupportsConcurrentCommands="false">
+          <AttachedAttributes />
+          <AttributeValues />
+          <ParentModels />
+          <Drivers>
+            <DriverName>Deployment Orchestrator</DriverName>
+          </Drivers>
+          <Scripts />
+        </ResourceModel>
+      </Models>
+      <Categories />
+    </ResourceFamily>
+  </ResourceFamilies>
+  <DriverDescriptors>
+    <DriverDescriptor Name="Deployment Orchestrator" Description="Deploy App" DriverType="PythonDriver" />
+    <DriverDescriptor Name="Python Setup &amp; Teardown" Description="This driver is used for running Python scripts in the environment setup and teardown. To use this driver, make sure you select a suitable setup and/or teardown script." DriverType="TestShellDriver" />
+  </DriverDescriptors>
+  <ScriptDescriptors>
+    <ScriptDescriptor Name="Default Sandbox Save 3.0" CategoryName="Hidden Commands" Version="3.4.0.208 " Alias="Save script" Visibility="Everyone" ExecutionEnvironmentType="0">
+      <ScriptInputs />
+    </ScriptDescriptor>
+    <ScriptDescriptor Name="Default Sandbox Restore 3.0" CategoryName="Hidden Commands" Version="3.4.0.208 " Alias="Restore script" Visibility="Everyone" ExecutionEnvironmentType="0">
+      <ScriptInputs />
+    </ScriptDescriptor>
+  </ScriptDescriptors>
+</DataModelInfo>

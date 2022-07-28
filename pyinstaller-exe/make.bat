@@ -1,0 +1,1 @@
+pyinstaller hello_world.py --clean --onefile

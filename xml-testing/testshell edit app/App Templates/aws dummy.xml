@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppTemplateInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AppResourceInfo Name="aws dummy">
+    <AppResources>
+      <AppResource ModelName="Generic App Model" Driver="">
+        <Attributes>
+          <Attribute Name="App Deploy Order" Value="N/A" />
+          <Attribute Name="Config Delay" Value="0" />
+          <Attribute Name="Execution Server Selector" Value="" />
+          <Attribute Name="is_rdp" Value="" />
+          <Attribute Name="is_ssh" Value="" />
+          <Attribute Name="MGMT Ansible Log" Value="" />
+          <Attribute Name="Model Name" Value="" />
+          <Attribute Name="natti test" Value="" />
+          <Attribute Name="Password" Value="" />
+          <Attribute Name="Post Deploy Timeout" Value="0" />
+          <Attribute Name="Public IP" Value="" />
+          <Attribute Name="QualiX_Address" Value="" />
+          <Attribute Name="Remote Connector Hostname" Value="remote.tgbr.local" />
+          <Attribute Name="Update Mail" Value="False" />
+          <Attribute Name="User" Value="" />
+          <Attribute Name="User Ansible Log" Value="" />
+        </Attributes>
+      </AppResource>
+    </AppResources>
+    <ConfigurationManagement>
+      <CustomScript ConnectionMethod="SSH">
+        <Repository Url="http://www.lol.com" />
+        <Parameters>
+          <Parameter Name="my_param" Value="" />
+        </Parameters>
+      </CustomScript>
+    </ConfigurationManagement>
+    <DeploymentPaths>
+      <DeploymentPath Name="aws dummy 1G - AWS EC2 Instance" Default="false">
+        <DeploymentService Name="AWS EC2 Instance" CloudProvider="aws dummy 1G">
+          <Attributes>
+            <Attribute Name="AWS AMI Id" Value="" />
+            <Attribute Name="Allow all Sandbox Traffic" Value="True" />
+            <Attribute Name="Instance Type" Value="" />
+            <Attribute Name="IAM Role Name" Value="" />
+            <Attribute Name="Custom Tags" Value="" />
+            <Attribute Name="User Data URL" Value="" />
+            <Attribute Name="User Data Parameters" Value="" />
+            <Attribute Name="Storage Size" Value="0" />
+            <Attribute Name="Storage IOPS" Value="0" />
+            <Attribute Name="Storage Type" Value="auto" />
+            <Attribute Name="Inbound Ports" Value="" />
+            <Attribute Name="Wait for IP" Value="False" />
+            <Attribute Name="Wait for Status Check" Value="False" />
+            <Attribute Name="Autoload" Value="True" />
+            <Attribute Name="Wait for Credentials" Value="True" />
+            <Attribute Name="Public IP Options" Value="No Public IP" />
+            <Attribute Name="Root Volume Name" Value="" />
+            <Attribute Name="Private IP" Value="" />
+          </Attributes>
+        </DeploymentService>
+      </DeploymentPath>
+    </DeploymentPaths>
+  </AppResourceInfo>
+  <Categories>
+    <Category>Applications</Category>
+  </Categories>
+</AppTemplateInfo>
