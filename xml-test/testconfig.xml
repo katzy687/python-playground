@@ -1,0 +1,113 @@
+<modelExport swconfig="version:9.00.108.26 build number:377539 strikebuild:379359" serialno="534612" schemaver="377539.379359">
+    <network name="testconfig" schemaver="377539.379359" author="admin" createdBy="admin" createdOn="2022-03-28T06:39:24.637 PDT" timestamp="2022-03-28T06:41:24.001 PDT" class="custom" revision="2" saved="true" canSave="true" namechanged="false">
+        <tpid interface="3" vlan_key="outer_vlan">8100</tpid>
+        <tpid interface="4" vlan_key="outer_vlan">8100</tpid>
+        <domain name="default" external="true">
+            <subnet behind_snapt="false" proxy="false" ip_v="4" type="external">
+                <range min="10.0.0.1" max="10.0.0.254" />
+                <params />
+                <composition>
+                    <stack type="ip_external_hosts" id="External Hosts ext_default" />
+                </composition>
+            </subnet>
+            <tag id="ext_default" />
+            <endpoints>External Hosts ext_default</endpoints>
+        </domain>
+        <domain name="default" external="false" interface="3" mtu="1500" ignorepause="false">
+            <subnet behind_snapt="false" proxy="false" l2="02:1A:C5:03:00:00" netaddr="198.18.2.0" netmask="24" gateway="198.18.2.1" ip_v="4" type="hosts" isipsec="false" enable_stats="false" mac_count="253">
+                <range min="198.18.2.2" max="198.18.2.254" />
+                <params />
+                <composition>
+                    <stack type="ip_static_hosts" id="Static Hosts i3_default" />
+                    <stack type="interface" id="Port 1" />
+                </composition>
+                <createdFrom>Static Hosts i3_default</createdFrom>
+            </subnet>
+            <tag id="i3_default" />
+            <endpoints>Static Hosts i3_default</endpoints>
+        </domain>
+        <domain name="default" external="false" interface="4" mtu="1500" ignorepause="false">
+            <subnet behind_snapt="false" proxy="false" l2="02:1A:C5:04:00:00" netaddr="198.19.2.0" netmask="24" gateway="198.19.2.1" ip_v="4" type="hosts" isipsec="false" enable_stats="false" mac_count="253">
+                <range min="198.19.2.2" max="198.19.2.254" />
+                <params />
+                <composition>
+                    <stack type="ip_static_hosts" id="Static Hosts i4_default" />
+                    <stack type="interface" id="Port 2" />
+                </composition>
+                <createdFrom>Static Hosts i4_default</createdFrom>
+            </subnet>
+            <tag id="i4_default" />
+            <endpoints>Static Hosts i4_default</endpoints>
+        </domain>
+        <networkModel>
+            <element type="interface">
+                <string id="id">Port 1</string>
+                <int id="number">3</int>
+                <int id="mtu">1500</int>
+                <boolean id="duplicate_mac_address">false</boolean>
+                <boolean id="use_vnic_mac_address">true</boolean>
+                <boolean id="ignore_pause_frames">false</boolean>
+                <mac_address id="mac_address">02:1A:C5:03:00:00</mac_address>
+                <enum id="vlan_key">outer_vlan</enum>
+            </element>
+            <element type="ip_static_hosts">
+                <string id="id">Static Hosts i3_default</string>
+                <ip_address id="ip_address">198.18.2.2</ip_address>
+                <ip_address id="gateway_ip_address">198.18.2.1</ip_address>
+                <int id="netmask">24</int>
+                <int id="count">253</int>
+                <int id="psn_netmask">8</int>
+                <int id="maxmbps_per_host" />
+                <reference id="default_container">Port 1</reference>
+                <boolean id="behind_snapt">false</boolean>
+                <boolean id="enable_stats">false</boolean>
+                <boolean id="proxy">false</boolean>
+                <enum id="ip_selection_type">random_ip</enum>
+                <tags id="tags">
+                    <tag id="i3_default" />
+                </tags>
+            </element>
+            <element type="interface">
+                <string id="id">Port 2</string>
+                <int id="number">4</int>
+                <int id="mtu">1500</int>
+                <boolean id="duplicate_mac_address">false</boolean>
+                <boolean id="use_vnic_mac_address">true</boolean>
+                <boolean id="ignore_pause_frames">false</boolean>
+                <mac_address id="mac_address">02:1A:C5:04:00:00</mac_address>
+                <enum id="vlan_key">outer_vlan</enum>
+            </element>
+            <element type="ip_static_hosts">
+                <string id="id">Static Hosts i4_default</string>
+                <ip_address id="ip_address">198.19.2.2</ip_address>
+                <ip_address id="gateway_ip_address">198.19.2.1</ip_address>
+                <int id="netmask">24</int>
+                <int id="count">253</int>
+                <int id="psn_netmask">8</int>
+                <int id="maxmbps_per_host" />
+                <reference id="default_container">Port 2</reference>
+                <boolean id="behind_snapt">false</boolean>
+                <boolean id="enable_stats">false</boolean>
+                <boolean id="proxy">false</boolean>
+                <enum id="ip_selection_type">random_ip</enum>
+                <tags id="tags">
+                    <tag id="i4_default" />
+                </tags>
+            </element>
+            <element type="ip_external_hosts">
+                <string id="id">External Hosts ext_default</string>
+                <ip_address id="ip_address">10.0.0.1</ip_address>
+                <int id="count">254</int>
+                <boolean id="behind_snapt">false</boolean>
+                <boolean id="proxy">false</boolean>
+                <tags id="tags">
+                    <tag id="ext_default" />
+                </tags>
+            </element>
+        </networkModel>
+        <params />
+        <label>
+            <string>28-03-22 test bps rfc2544</string>
+        </label>
+    </network>
+</modelExport>

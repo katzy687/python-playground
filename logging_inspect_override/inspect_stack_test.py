@@ -4,8 +4,7 @@ import sys
 stack = inspect.stack()
 
 
-def a():
-    python_major_version = sys.version_info.major
+def wrapper():
 
     stack = inspect.stack()
     target_stack = stack[0]
@@ -15,11 +14,11 @@ def a():
     pass
 
 
-def b():
-    a()
+def main_code_helper():
+    wrapper()
 
 
-def c():
-    b()
+def main_code():
+    main_code_helper()
 
-c()
+main_code()

@@ -1,0 +1,15 @@
+{
+  "time": "2022-05-09 01:29:03,625",
+  "name": "root",
+  "level": "INFO",
+  "message": "'hello there'",
+  "function": "json_log_test.log_it - line 34",
+  "path_name": "C:/Users/natti.k/code/python-playground/json-logger/json_log_test.py",
+  "process": "12352",
+  "execution_info": {
+    "host_name": "QS-IL-LT-NATTIK",
+    "IP": "1.1.1.1",
+    "Platform": "Windows",
+    "Python Version": "3.7.1"
+  }
+}

@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: natti-dummy-package
+Version: 0.0.2
+Summary: A small example package
+Home-page: https://www.nyan.cat/
+Author: Natti
+Author-email: author@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+hello there, here's some docs for you to read
+

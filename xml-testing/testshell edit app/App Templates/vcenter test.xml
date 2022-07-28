@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppTemplateInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AppResourceInfo Name="vcenter test">
+    <AppResources>
+      <AppResource ModelName="Generic App Model" Driver="">
+        <Attributes>
+          <Attribute Name="App Deploy Order" Value="N/A" />
+          <Attribute Name="Config Delay" Value="0" />
+          <Attribute Name="Execution Server Selector" Value="" />
+          <Attribute Name="is_rdp" Value="" />
+          <Attribute Name="is_ssh" Value="" />
+          <Attribute Name="MGMT Ansible Log" Value="" />
+          <Attribute Name="Model Name" Value="" />
+          <Attribute Name="natti test" Value="" />
+          <Attribute Name="Password" Value="" />
+          <Attribute Name="Post Deploy Timeout" Value="0" />
+          <Attribute Name="Public IP" Value="" />
+          <Attribute Name="QualiX_Address" Value="" />
+          <Attribute Name="Remote Connector Hostname" Value="remote.tgbr.local" />
+          <Attribute Name="Update Mail" Value="False" />
+          <Attribute Name="User" Value="" />
+          <Attribute Name="User Ansible Log" Value="" />
+        </Attributes>
+      </AppResource>
+    </AppResources>
+    <ConfigurationManagement>
+      <Ansible ConnectionMethod="SSH">
+        <Repository Url="http://lol.com" />
+        <Parameters />
+      </Ansible>
+    </ConfigurationManagement>
+    <DeploymentPaths>
+      <DeploymentPath Name="test" Default="false">
+        <DeploymentService Name="VMware vCenter Cloud Provider 2G.vCenter VM From Image 2G" CloudProvider="vcenter 110 - 2G">
+          <Attributes>
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Image 2G.Private IP" Value="" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Image 2G.vCenter Image" Value="" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Image 2G.vCenter Image Arguments" Value="" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Image 2G.Default Datacenter" Value="" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Image 2G.VM Cluster" Value="" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Image 2G.VM Storage" Value="" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Image 2G.Behavior during save" Value="Remain Powered On" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Image 2G.VM Resource Pool" Value="" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Image 2G.VM Location" Value="" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Image 2G.Auto Power On" Value="True" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Image 2G.Auto Power Off" Value="True" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Image 2G.Wait for IP" Value="True" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Image 2G.Auto Delete" Value="True" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Image 2G.Autoload" Value="True" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Image 2G.IP Regex" Value="" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Image 2G.Refresh IP Timeout" Value="600" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Image 2G.CPU" Value="" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Image 2G.RAM" Value="" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Image 2G.HDD" Value="" />
+          </Attributes>
+        </DeploymentService>
+      </DeploymentPath>
+      <DeploymentPath Name="vcenter 110 - 2G - VMware vCenter Cloud Provider 2G.vCenter VM From Linked Clone 2G" Default="false">
+        <DeploymentService Name="VMware vCenter Cloud Provider 2G.vCenter VM From Linked Clone 2G" CloudProvider="vcenter 110 - 2G">
+          <Attributes>
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Linked Clone 2G.Hostname" Value="asdf" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Linked Clone 2G.Private IP" Value="asdf" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Linked Clone 2G.vCenter VM" Value="" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Linked Clone 2G.vCenter VM Snapshot" Value="" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Linked Clone 2G.VM Cluster" Value="" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Linked Clone 2G.VM Storage" Value="" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Linked Clone 2G.Behavior during save" Value="Remain Powered On" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Linked Clone 2G.VM Resource Pool" Value="" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Linked Clone 2G.VM Location" Value="" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Linked Clone 2G.Auto Power On" Value="True" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Linked Clone 2G.Auto Power Off" Value="True" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Linked Clone 2G.Wait for IP" Value="True" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Linked Clone 2G.Auto Delete" Value="True" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Linked Clone 2G.Autoload" Value="True" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Linked Clone 2G.IP Regex" Value="" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Linked Clone 2G.Refresh IP Timeout" Value="600" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Linked Clone 2G.Customization Spec" Value="" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Linked Clone 2G.CPU" Value="" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Linked Clone 2G.RAM" Value="" />
+            <Attribute Name="VMware vCenter Cloud Provider 2G.vCenter VM From Linked Clone 2G.HDD" Value="" />
+          </Attributes>
+        </DeploymentService>
+      </DeploymentPath>
+    </DeploymentPaths>
+  </AppResourceInfo>
+  <Categories>
+    <Category>Applications</Category>
+  </Categories>
+</AppTemplateInfo>
