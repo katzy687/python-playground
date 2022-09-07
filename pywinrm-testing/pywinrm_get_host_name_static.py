@@ -1,6 +1,6 @@
 import winrm
 
-host_ip = "192.168.85.74"
+host_ip = "localhost"
 user = "Administrator"
 password = "Password1"
 

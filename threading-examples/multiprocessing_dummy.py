@@ -24,7 +24,7 @@ if __name__ == "__main__":
     failed = []
     for x, result in results:
         try:
-            result.get()
+            z = result.get()
         except:
             failed.append(x)
     if failed:

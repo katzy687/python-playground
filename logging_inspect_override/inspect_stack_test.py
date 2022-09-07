@@ -1,11 +1,7 @@
 import inspect
-import sys
-
-stack = inspect.stack()
 
 
-def wrapper():
-
+def my_wrapper():
     stack = inspect.stack()
     target_stack = stack[0]
     function = target_stack.function
@@ -15,10 +11,12 @@ def wrapper():
 
 
 def main_code_helper():
-    wrapper()
+    my_wrapper()
 
 
-def main_code():
+def main():
     main_code_helper()
 
-main_code()
+
+if __name__ == "__main__":
+    main()

@@ -20,11 +20,16 @@ class Person:
 
 
 data = [Person("alice", 26), Person("tim", 27)]
+data2 = [Person("brit", 26), Person("hank", 27)]
 
 data_dicts = [x.__dict__ for x in data]
+data_dicts2 = [x.__dict__ for x in data2]
 
 df = pd.DataFrame(data_dicts)
-for r in dataframe_to_rows(df, index=False, header=True):
+df2 = pd.DataFrame(data_dicts2)
+df.insert(2, "", "")
+joined = pd.concat([df, df2], axis=1)
+for r in dataframe_to_rows(joined, index=False, header=True):
     ws.append(r)
 
 wb.save(file_name)
