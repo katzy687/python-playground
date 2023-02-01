@@ -25,7 +25,6 @@ with ThreadPoolExecutor(10) as executor:
     res = wait(futures)
     for f in res.done:
         res = f.result()
-        f.
         print(res)
         pass
     print('All tasks are done!')
